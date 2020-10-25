@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-color: darkslategrey; margin-left: 3%; margin-top: 2%;" >
+
+        <form onsubmit="input()" style="color: floralwhite;">
+        Select Algorithm
+        <select id="dropDown" >
+            <option value="0" selected>Select</option>
+            <option value="1">Dijkstra</option>
+            <option value="2">A-Star</option>
+            <option value="3">Best first Search</option>
+            <option value="4">Bi-directional Dijkstra</option>
+            
+        </select>
+        <input type="button" value="Submit" onclick="input()">
+        </form>
+
+        <br>
+
+        <canvas id="canvas"></canvas>
+        <script src="script.js"></script>
+
+        <div style="color: floralwhite;">
+            <p>Select an algorithm from list and press submit button</p>
+            <p>Select starting point  green in colour and select end point blue in colour using mouse</p>
+            <p>Draw walls using mouse black in colour or press r to randomly fill the grid</p>
+            <p>Press enter to start</p>
+            <p>Red colour cell will represent shortest path</p>
+            <p>Reload the page to re-run the program</p>
+        </div>
+        
+    </body>
+</html>
